@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <SplitPane fx:id="splitPane" dividerPositions="0.2391304347826087" orientation="VERTICAL" prefHeight="671.0" prefWidth="969.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Text layoutX="298.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="学生管理系统">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="659.0" layoutY="73.0" mnemonicParsing="false" onAction="#statistic" prefHeight="40.0" prefWidth="80.0" text="统计学分" />
+                  <Button layoutX="760.0" layoutY="73.0" mnemonicParsing="false" onAction="#analysis" prefHeight="40.0" prefWidth="80.0" text="分析成绩" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.18480725623582767" prefHeight="503.0" prefWidth="998.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="473.0" prefWidth="230.0">
+                           <children>
+                              <TabPane layoutX="-7.0" prefHeight="501.0" prefWidth="250.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <tabs>
+                                  <Tab fx:id="tab_stu" text="学生">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox alignment="CENTER" prefHeight="518.0" prefWidth="297.0" spacing="27.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-15.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <Button mnemonicParsing="false" onAction="#addStudent" prefHeight="40.0" prefWidth="115.0" text="添加学生" />
+                                                      <Button mnemonicParsing="false" onAction="#changeStu" prefHeight="40.0" prefWidth="115.0" text="修改信息" />
+                                                      <Button mnemonicParsing="false" onAction="#deleteStu" prefHeight="40.0" prefWidth="115.0" text="删除学生" />
+                                                      <Button mnemonicParsing="false" onAction="#queryStu" prefHeight="40.0" prefWidth="115.0" text="查询信息" />
+                                                   </children>
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                  <Tab fx:id="tab_course" text="课程">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox alignment="CENTER" prefHeight="462.0" prefWidth="250.0" spacing="27.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <Button mnemonicParsing="false" onAction="#addCourse" prefHeight="40.0" prefWidth="115.0" text="添加课程" />
+                                                      <Button mnemonicParsing="false" onAction="#changeCourse" prefHeight="40.0" prefWidth="115.0" text="修改课程" />
+                                                      <Button mnemonicParsing="false" onAction="#deleteCourse" prefHeight="40.0" prefWidth="115.0" text="删除课程" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                    <Tab fx:id="tab_score" text="成 绩">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox alignment="CENTER" prefHeight="462.0" prefWidth="250.0" spacing="27.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <Button mnemonicParsing="false" onAction="#addScore" prefHeight="40.0" prefWidth="115.0" text="添加成绩" />
+                                                      <Button mnemonicParsing="false" onAction="#changeScore" prefHeight="40.0" prefWidth="115.0" text="修改成绩" />
+                                                      <Button mnemonicParsing="false" onAction="#deleteScore" prefHeight="40.0" prefWidth="115.0" text="删除成绩" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                </tabs>
+                              </TabPane>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="473.0" prefWidth="711.0">
+                           <children>
+                              <StackPane prefHeight="556.0" prefWidth="886.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <TableView fx:id="studentTableView" editable="true" prefHeight="501.0" prefWidth="50.0">
+                                      <columns>
+                                        <TableColumn fx:id="stuIDCol" prefWidth="140.0" resizable="false" text="学号" />
+                                          <TableColumn fx:id="stuClassCol" prefWidth="123.0" resizable="false" text="班级" />
+                                        <TableColumn fx:id="stuNameCol" minWidth="4.0" prefWidth="115.0" resizable="false" text="姓名" />
+                                          <TableColumn fx:id="stuSexCol" minWidth="0.0" prefWidth="75.0" resizable="false" text="性别" />
+                                          <TableColumn fx:id="stuBirCol" prefWidth="102.0" resizable="false" text="出生日期" />
+                                          <TableColumn fx:id="stuMajorCol" minWidth="0.0" prefWidth="154.0" resizable="false" text="所在专业" />
+                                      </columns>
+                                    </TableView>
+                                    <TableView fx:id="courseTableView" editable="true" prefHeight="501.0" prefWidth="738.0" visible="false">
+                                      <columns>
+                                        <TableColumn fx:id="cIdCol" prefWidth="93.0" resizable="false" text="课程号" />
+                                        <TableColumn fx:id="cMajorCol" prefWidth="143.0" resizable="false" text="所属专业" />
+                                          <TableColumn fx:id="cNameCol" minWidth="3.0" prefWidth="114.0" resizable="false" text="课程名称" />
+                                          <TableColumn fx:id="cTypeCol" prefWidth="77.0" resizable="false" text="课程类型" />
+                                          <TableColumn fx:id="cStartTremCol" prefWidth="137.0" resizable="false" text="开课学期" />
+                                          <TableColumn fx:id="cPeriodCol" prefWidth="83.0" resizable="false" text="学时数" />
+                                          <TableColumn fx:id="cCreditCol" prefWidth="78.0" resizable="false" text="学分" />
+                                      </columns>
+                                    </TableView>
+                                    <TableView fx:id="scoreTableView" editable="true" prefHeight="556.0" prefWidth="835.0" visible="false">
+                                       <columns>
+                                          <TableColumn fx:id="score_sIdCol" prefWidth="200.0" resizable="false" text="学号" />
+                                          <TableColumn fx:id="score_cIdCol" prefWidth="200.0" resizable="false" text="课程号" />
+                                          <TableColumn fx:id="scoreCol" prefWidth="163.0" resizable="false" text="成绩" />
+                                          <TableColumn fx:id="score_creditCol" prefWidth="162.0" resizable="false" text="学分" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

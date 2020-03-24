@@ -1,0 +1,30 @@
+/*设置表格头靠左、字体大小，字体颜色*/
+.table-view .column-header .label{
+    -fx-alignment: center;
+    -fx-font-family: "Arial";
+    -fx-text-fill: rgba(68,68,68,0.96);
+    -fx-font-size: 16;
+}
+
+/*设置表格头高度*/
+.table-view > .column-header-background{
+    -fx-pref-height: 36;
+}
+
+/*设置每一列内容居中，每一行高度*/
+.table-row-cell{
+    -fx-cell-size: 34px;
+    -fx-alignment: center;
+}
+
+.table-view {
+    -fx-table-cell-border-color:black;
+    -fx-border-color: white;
+    -fx-border-width: 0;
+    -fx-alignment: center-left;
+}
+
+/*设置每一列内容居中*/
+.table-column{
+  -fx-alignment: center;
+}
