@@ -1,15 +1,7 @@
-转载自我的 [CSDN博客](https://blog.csdn.net/weixin_43734095/article/details/105085183)
 
 # 前言
-是这样的....那个夜黑风高的晚上，我高中同学给我发了这么一张图....
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200325000800769.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzczNDA5NQ==,size_16,color_FFFFFF,t_70)
-秒懂，遂着手，腾出 3 天的晚上时间，完成此项目.....
-
-我对学生管理系统没啥兴趣...完全按照他们的需求来做，旨在做出个任务品 让他们交作业.....下面就介绍一下大体框架和数据库表的设计。
-
-# 项目GitHub网址
-
-**完整代码放在 GitHub**，[https://github.com/szluyu99/StudentDataMS](https://github.com/szluyu99/StudentDataMS)
 
 # 需求分析
 系统的主要功能包括：信息的操作功能、查询功能、统计功能、分析功能和打印功能。 
